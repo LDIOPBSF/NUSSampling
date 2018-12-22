@@ -51,8 +51,8 @@ def main():
                     tmps22=time.process_time()-tmps21
                     print ("Sampling time = ", tmps22)
                 #************  Ouput 
-                    creatArffFile(contenuBaseSequence, EnsSousSequence, indiceClass,relation,N,tailleMax,nbRep,utility)
-                #   recordSample(EnsSousSequence, N, tailleMax, utility, relation)
+                #   creatArffFile(contenuBaseSequence, EnsSousSequence, indiceClass,relation,N,tailleMax,nbRep,utility)
+                    recordSample(EnsSousSequence, N, tailleMax, utility, relation)
                 #   recordSampleWithFrequecy(contenuBaseSequence, EnsSousSequence, N, tailleMax, utility, relation,alpha)
                 tmps2=time.process_time()-tmps1
                 print ("################## Total execution time = ",tmps2)
