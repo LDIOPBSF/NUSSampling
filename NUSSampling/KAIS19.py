@@ -20,8 +20,7 @@ def main():
     tailleMax = 3 # maximal norm, by default minimal norm m=1
     indiceClass = 0 # negative value if no class
     N=10000 # Sample size 
-    # "D10K5S2T6I.txt", "D10K6S3T10I.txt", "BMS.txt", "SIGN.txt", "D100K5S2T6I.txt", "D100K6S2T6I.txt"
-    datasets = ["blocks.txt", "context.txt", "skater.txt", "seq-speed", "asl-gt-thad.txt"]
+    datasets = ["BMS.txt", "SIGN.txt", "D10K5S2T6I.txt", "D10K6S3T10I.txt", "D100K5S2T6I.txt", "D100K6S2T6I.txt"]
     alpha = 0.05 # for the weighted utility
     for baseSequence in datasets:
         contenuBaseSequence = LoadDataset("Data\\"+baseSequence, -1).dataset
