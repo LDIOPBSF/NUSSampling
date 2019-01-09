@@ -19,7 +19,7 @@ import numpy
 
 def main():
     indiceClass = -1 # negative value if no class
-    N=10000 # Sample size
+    N=1000 # Sample size
     utility = "area" # "area" or "freq" or alpha "asl-gt-thad.txt", "asl-bu.txt", "seq-auslan", "blocks.txt", "context.txt", "pioneer.txt", "skater.txt"
     alpha = 0.05 # by default
     datasets = ["D10K5S2T6I.txt"] #,"D10K6S3T10I.txt","D100K5S2T6I.txt","D100K6S2T6I.txt"]
@@ -39,7 +39,7 @@ def main():
                 wData = WeightedDataset(contenuBaseSequence,tailleMax,indiceClass,utility,alpha)
                 basePonderee,tabSigma=wData.basePonderee,wData.tabSigma
                 tmps22=time.process_time()-tmps21
-                print ("Preprocessing time : ", tmps22)
+                print ("Preprocessing time (s) : ", tmps22)
             #************  Sampling
                 for nbRep in range(1):
                     tmps21=time.process_time()
@@ -52,13 +52,13 @@ def main():
                         nombreDeRejet,c_accept, c_rejet=mesValParam.nombreDeRejet,mesValParam.c_accept,mesValParam.c_rejet
                         i+=1
                     tmps22=time.process_time()-tmps21
-                    print ("Sampling time : ", tmps22)
+                    print ("Sampling time (s) : ", tmps22)
                 #************  Ouput 
                 #   creatArffFile(contenuBaseSequence, EnsSousSequence, indiceClass,relation,N,tailleMax,nbRep)
                 #   recordSample(EnsSousSequence, N, tailleMax, utility, relation,alpha)
                 #   recordSampleWithFrequecy(contenuBaseSequence, EnsSousSequence, N, tailleMax, utility, relation,alpha)
                 tmps2=time.process_time()-tmps1
-                print ("****************** Total execution time : ",tmps2)
+                print ("****************** Total execution time (s) : ",tmps2)
     
 if __name__ == "__main__":
     main()
