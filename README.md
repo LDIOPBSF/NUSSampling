@@ -14,14 +14,26 @@
 **********************************************************************************
 
 ****************** Number of patterns :  1000  ******************
+
 Dataset :  D10K5S2T6I
+
 Maximum norm :  2
+
 utility :  area
+
 Preprocessing time :  1.4375
+
 Sampling time :  0.0625
+
 ****************** Total execution time :  1.5
+
 Maximum norm :  3
+
 utility :  area
+
 Preprocessing time :  2.078125
+
 Sampling time :  0.0625
+
 ****************** Total execution time :  2.140625
+
