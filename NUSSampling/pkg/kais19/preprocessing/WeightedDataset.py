@@ -2,14 +2,13 @@
 
 __author__ = "DIOP Lamine BSF"
 
-import sys
 from math import log
 from math import pow
 
 class WeightedDataset(object):
     def __init__(self, dataset,tailleMax,indiceClass,utility,alpha):
-        self.alpha = alpha
         self.utility = utility
+        self.alpha = alpha
         self.delimiteurItemset='-1'
         self.basePonderee, self.tabSigma,som,self.ponderation=list(),list(),0.0,{}
         for sequence in dataset:
@@ -170,11 +169,9 @@ class WeightedDataset(object):
                 self.som+=M[i]*(i+1)
         elif utility == "freq":
             self.som = sum(M)
-        elif utility == "weight":
+        elif utility == "alpha":
             for i in range(len(M)):
                 self.som+=M[i]*pow(self.alpha,i+1)
-        else:
-            sys.exit()
         return self.som
     
     #Transformer la séquence en un tableau d'itemsets

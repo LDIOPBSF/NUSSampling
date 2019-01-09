@@ -7,8 +7,8 @@ import random
 
 class SubSequence(object):	
 	def __init__(self,EnsSequence, EnsSousSequence,nombreDeRejet,contenuBaseSequence,basePonderee, c_accept, c_rejet,tabSigma,indiceClass,utility,alpha):
-		self.alpha = alpha
 		self.utility=utility
+		self.alpha = alpha
 		self.delimiteurItemset = '-1 '
 		self.delimiteurSequence = '-2 '
 		i,nbSeq=0,len(contenuBaseSequence)
@@ -71,7 +71,7 @@ class SubSequence(object):
 			for l in range(len(tabNorme)):
 				som+=tabNorme[l]*(l+1)
 				tab.append(som)
-		elif self.utility=="weight":
+		elif self.utility=="alpha":
 			for l in range(len(tabNorme)):
 				som+=tabNorme[l]*pow(self.alpha,l+1)
 				tab.append(som)
