@@ -2,6 +2,7 @@
 
 
 **Example**
+
 ##################################################################################
 # NUSSampling : Norm-based Utility Subsequence Sampling.                         #
 # It's a generalisation of the CSSampling algorithm of Diop & al. (ICDM2018).    #
