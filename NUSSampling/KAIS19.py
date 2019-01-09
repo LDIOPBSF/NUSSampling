@@ -58,7 +58,7 @@ def main():
                 #   recordSample(EnsSousSequence, N, tailleMax, utility, relation,alpha)
                 #   recordSampleWithFrequecy(contenuBaseSequence, EnsSousSequence, N, tailleMax, utility, relation,alpha)
                 tmps2=time.process_time()-tmps1
-                print ("################## Total execution time : ",tmps2)
+                print ("****************** Total execution time : ",tmps2)
     
 if __name__ == "__main__":
     main()
