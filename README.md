@@ -1,7 +1,7 @@
 # NUSSampling
 
 
-**Example**
+
 
 ##################################################################################
 # NUSSampling : Norm-based Utility Subsequence Sampling.                         #
