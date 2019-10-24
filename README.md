@@ -1,7 +1,7 @@
 NUSSampling <br>
 Copyright (c) 2019  Lamine Diop (1;2), Cheikh Talibouya Diop (1), 
 Arnaud Giacometti (2), Dominique Li (2) and Arnaud Soulet (2)
-(1) University of Gaston Berger of Saint-Louis, Senegal
+(1) University Gaston Berger of Saint-Louis, Senegal
 Email: {diop.lamine3, cheikh-talibouya.diop}@ugb.edu.sn
 (2) University of Tours, France
 Email: {arnaud.giacometti, dominique.li, arnaud.soulet}@univ-tours.fr
