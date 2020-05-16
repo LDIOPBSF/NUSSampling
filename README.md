@@ -1,4 +1,4 @@
-NUSSampling <br>
+NUSSampling (A generalisation Algorithm of CSSampling(https://github.com/LDIOPBSF/CSSampling)) <br>
 Copyright (c) 2019  Lamine Diop (1;2), Cheikh Talibouya Diop (1), 
 Arnaud Giacometti (2), Dominique Li (2) and Arnaud Soulet (2)
 (1) University Gaston Berger of Saint-Louis, Senegal
